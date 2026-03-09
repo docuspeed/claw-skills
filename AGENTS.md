@@ -11,10 +11,13 @@ claw-skills/
 ├── README.md
 ├── .gitignore
 └── <skill-name>/
-    └── SKILL.md
+    ├── SKILL.md          # 必需，skill 定义文件
+    ├── scripts/          # 可选，辅助脚本
+    ├── references/       # 可选，参考资料/文献
+    └── assets/           # 可选，图片等静态资源
 ```
 
-每个 skill 是一个独立目录，目录名即 skill 名称（使用小写英文 + 连字符命名），目录内包含一个 `SKILL.md` 文件。
+每个 skill 是一个独立目录，目录名即 skill 名称（使用小写英文 + 连字符命名）。目录内必须包含 `SKILL.md` 文件，可选包含 `scripts/`、`references/`、`assets/` 等子目录。
 
 ## SKILL.md 格式规范
 
