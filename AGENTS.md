@@ -43,3 +43,19 @@ description: 简短描述该 skill 的用途
 1. 在仓库根目录创建以 skill 名称命名的新目录
 2. 在目录内创建 `SKILL.md`，遵循上述格式规范
 3. 提交 PR 并确保 frontmatter 格式正确
+
+## 发版流程
+
+本仓库使用日期版本号（如 `v2026.04.03`），通过 GitHub Releases 发布更新。
+
+发版步骤：
+
+1. 确保所有变更已提交到 `master` 分支
+2. 创建日期 tag 并推送：
+   ```bash
+   git tag -a v2026.04.03 -m "发版说明"
+   git push origin v2026.04.03
+   ```
+3. GitHub Actions 会自动创建 Release，并根据两个 tag 之间的 commit 记录生成更新说明。
+
+用户可通过仓库页面 **Watch -> Custom -> Releases** 订阅发版通知。
